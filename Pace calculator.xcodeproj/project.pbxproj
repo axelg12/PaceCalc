@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77839C391E65765400437E2C /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77839C381E65765400437E2C /* TimeController.swift */; };
+		77839C3B1E6577FF00437E2C /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77839C3A1E6577FF00437E2C /* Shared.swift */; };
+		77839C3D1E6578ED00437E2C /* DistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77839C3C1E6578ED00437E2C /* DistanceController.swift */; };
+		77CB302D1E66CB2400CDCFA3 /* Pace_calculatorTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB302C1E66CB2400CDCFA3 /* Pace_calculatorTests2.swift */; };
 		77E50C3F1E6072BA00F10657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E50C3E1E6072BA00F10657 /* AppDelegate.swift */; };
 		77E50C411E6072BA00F10657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E50C401E6072BA00F10657 /* ViewController.swift */; };
 		77E50C441E6072BA00F10657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E50C421E6072BA00F10657 /* Main.storyboard */; };
@@ -15,7 +19,23 @@
 		77E50C4C1E6072BA00F10657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E50C4A1E6072BA00F10657 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		77CB302F1E66CB2400CDCFA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77E50C331E6072B900F10657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77E50C3A1E6072B900F10657;
+			remoteInfo = "Pace calculator";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		77839C381E65765400437E2C /* TimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
+		77839C3A1E6577FF00437E2C /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		77839C3C1E6578ED00437E2C /* DistanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceController.swift; sourceTree = "<group>"; };
+		77CB302A1E66CB2400CDCFA3 /* Pace calculatorTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pace calculatorTests2.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CB302C1E66CB2400CDCFA3 /* Pace_calculatorTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pace_calculatorTests2.swift; sourceTree = "<group>"; };
+		77CB302E1E66CB2400CDCFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77E50C3B1E6072BA00F10657 /* Pace calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pace calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E50C3E1E6072BA00F10657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E50C401E6072BA00F10657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		77CB30271E66CB2400CDCFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77E50C381E6072B900F10657 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77CB302B1E66CB2400CDCFA3 /* Pace calculatorTests2 */ = {
+			isa = PBXGroup;
+			children = (
+				77CB302C1E66CB2400CDCFA3 /* Pace_calculatorTests2.swift */,
+				77CB302E1E66CB2400CDCFA3 /* Info.plist */,
+			);
+			path = "Pace calculatorTests2";
+			sourceTree = "<group>";
+		};
 		77E50C321E6072B900F10657 = {
 			isa = PBXGroup;
 			children = (
-				77E50C3D1E6072BA00F10657 /* Pace calculator */,
+				77E50C3D1E6072BA00F10657 /* PaceCalculator */,
+				77CB302B1E66CB2400CDCFA3 /* Pace calculatorTests2 */,
 				77E50C3C1E6072BA00F10657 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,11 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				77E50C3B1E6072BA00F10657 /* Pace calculator.app */,
+				77CB302A1E66CB2400CDCFA3 /* Pace calculatorTests2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		77E50C3D1E6072BA00F10657 /* Pace calculator */ = {
+		77E50C3D1E6072BA00F10657 /* PaceCalculator */ = {
 			isa = PBXGroup;
 			children = (
 				77E50C3E1E6072BA00F10657 /* AppDelegate.swift */,
@@ -63,13 +101,35 @@
 				77E50C4A1E6072BA00F10657 /* LaunchScreen.storyboard */,
 				77E50C4D1E6072BA00F10657 /* Info.plist */,
 				77E50C451E6072BA00F10657 /* Pace_calculator.xcdatamodeld */,
+				77839C381E65765400437E2C /* TimeController.swift */,
+				77839C3A1E6577FF00437E2C /* Shared.swift */,
+				77839C3C1E6578ED00437E2C /* DistanceController.swift */,
 			);
+			name = PaceCalculator;
 			path = "Pace calculator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		77CB30291E66CB2400CDCFA3 /* Pace calculatorTests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CB30311E66CB2400CDCFA3 /* Build configuration list for PBXNativeTarget "Pace calculatorTests2" */;
+			buildPhases = (
+				77CB30261E66CB2400CDCFA3 /* Sources */,
+				77CB30271E66CB2400CDCFA3 /* Frameworks */,
+				77CB30281E66CB2400CDCFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77CB30301E66CB2400CDCFA3 /* PBXTargetDependency */,
+			);
+			name = "Pace calculatorTests2";
+			productName = "Pace calculatorTests2";
+			productReference = 77CB302A1E66CB2400CDCFA3 /* Pace calculatorTests2.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		77E50C3A1E6072B900F10657 /* Pace calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77E50C501E6072BA00F10657 /* Build configuration list for PBXNativeTarget "Pace calculator" */;
@@ -93,10 +153,16 @@
 		77E50C331E6072B900F10657 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Axel Gislason";
 				TargetAttributes = {
+					77CB30291E66CB2400CDCFA3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5997XH4CU5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77E50C3A1E6072B900F10657;
+					};
 					77E50C3A1E6072B900F10657 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5997XH4CU5;
@@ -118,11 +184,19 @@
 			projectRoot = "";
 			targets = (
 				77E50C3A1E6072B900F10657 /* Pace calculator */,
+				77CB30291E66CB2400CDCFA3 /* Pace calculatorTests2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		77CB30281E66CB2400CDCFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77E50C391E6072B900F10657 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,17 +210,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		77CB30261E66CB2400CDCFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CB302D1E66CB2400CDCFA3 /* Pace_calculatorTests2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77E50C371E6072B900F10657 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77839C3B1E6577FF00437E2C /* Shared.swift in Sources */,
 				77E50C411E6072BA00F10657 /* ViewController.swift in Sources */,
+				77839C3D1E6578ED00437E2C /* DistanceController.swift in Sources */,
 				77E50C3F1E6072BA00F10657 /* AppDelegate.swift in Sources */,
+				77839C391E65765400437E2C /* TimeController.swift in Sources */,
 				77E50C471E6072BA00F10657 /* Pace_calculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77CB30301E66CB2400CDCFA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77E50C3A1E6072B900F10657 /* Pace calculator */;
+			targetProxy = 77CB302F1E66CB2400CDCFA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		77E50C421E6072BA00F10657 /* Main.storyboard */ = {
@@ -168,6 +261,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		77CB30321E66CB2400CDCFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5997XH4CU5;
+				INFOPLIST_FILE = "Pace calculatorTests2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.axel.Pace-calculatorTests2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pace calculator.app/Pace calculator";
+			};
+			name = Debug;
+		};
+		77CB30331E66CB2400CDCFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5997XH4CU5;
+				INFOPLIST_FILE = "Pace calculatorTests2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.axel.Pace-calculatorTests2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pace calculator.app/Pace calculator";
+			};
+			name = Release;
+		};
 		77E50C4E1E6072BA00F10657 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -186,6 +309,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -235,6 +359,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -288,6 +413,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		77CB30311E66CB2400CDCFA3 /* Build configuration list for PBXNativeTarget "Pace calculatorTests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77CB30321E66CB2400CDCFA3 /* Debug */,
+				77CB30331E66CB2400CDCFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		77E50C361E6072B900F10657 /* Build configuration list for PBXProject "Pace calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -304,6 +438,7 @@
 				77E50C521E6072BA00F10657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
